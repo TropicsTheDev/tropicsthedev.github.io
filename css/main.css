@@ -1,0 +1,17 @@
+html{
+    /* base 10 font */
+    font-size: 62.5%;
+    
+    /*Colors */
+    --backgroundOne: #c8c8c8;
+    --backgroundTwo: #e6e1e5;
+    --accentOne: #1b998b;
+    --accentTwo: #124559;
+
+    /* Screen Breakpoints */
+    --desktopSize: 900px;
+}
+
+body{
+    background-color: var(--backgroundOne);
+}
