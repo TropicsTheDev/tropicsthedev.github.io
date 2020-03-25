@@ -7,11 +7,76 @@ html{
     --backgroundTwo: #e6e1e5;
     --accentOne: #1b998b;
     --accentTwo: #124559;
+    --fontOnLight: #37323e;
+    --cardShadow: rgba(18, 69, 89, 0.75);
+
+    /* fonts */
+    --primaryHeading: "Shojumaru";
+    --secondaryHeading: "Anton";
+    --contentText: "Oxygen Light";
+
+    /* Layout */
+    --defaultGap: 2rem;
 
     /* Screen Breakpoints */
     --desktopSize: 900px;
+    --maxWidth: 1200px;
 }
 
 body{
     background-color: var(--backgroundOne);
+    font: 2.5rem var(--contentText);
+    color: var(--fontOnLight);
+    
+}
+
+.wrapper{
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+}
+h2{
+    font: 4.5rem var(--primaryHeading); 
+    color: var(--accentOne);
+}
+
+h3{
+    font: 4rem var(--secondaryHeading);
+    color: var(--accentTwo);
+}
+
+h4{
+    font: 3.5rem var(--secondaryHeading);
+    
+    color: var(--accentOne);
+}
+
+header{
+    background-color: var(--accentOne);
+}
+section{
+    display: grid;
+    grid-template-columns: minmax(10rem, 1fr);
+    grid-gap: var(--defaultGap);
+}
+
+.card{
+    background-color: var(--backgroundTwo);
+    padding: 3rem;
+    box-shadow: 10px 10px 10px var(--cardShadow);
+}
+
+figure{
+    position: relative;
+    padding-bottom: 56.25%;
+}
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-color: var(--accentOne);
 }
