@@ -1,0 +1,23 @@
+article{
+    display: grid;
+    grid-template-areas: 
+        "video"
+        "card";
+        grid-gap: 2rem;
+}
+
+.card{
+    grid-area: card;
+}
+
+.videoPlayer{
+    grid-area: video;
+}
+
+@media(min-width: 1000px){
+    article{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "card video";
+    }
+
+}
