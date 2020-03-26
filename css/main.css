@@ -16,29 +16,35 @@ html {
   /* fonts */
   --primaryHeading: "Shojumaru";
   --secondaryHeading: "Anton";
-  --contentText: "Oxygen Light";
+  --contentText: "Oxygen";
 
   /* Layout */
   --defaultGap: 2rem;
 
-  /* Screen Breakpoints */
-  --desktopSize: 900px;
-  --maxWidth: 1200px;
+  /*sizing*/
+
+  --maxWidth: 1400px;
 }
 
 body {
   background-color: var(--backgroundOne);
   font: 2.5rem var(--contentText);
   color: var(--fontOnLight);
+  font-weight: lighter;
+
 }
 
 .wrapper {
   max-width: var(--maxWidth);
+  padding: 2.5rem;
   margin: 0 auto;
+  display: grid;
+  grid-gap: 3.5rem;
 }
 h2 {
   font: 4.5rem var(--primaryHeading);
   color: var(--accentOne);
+  margin-top: 1rem;
 }
 
 h3 {
@@ -54,11 +60,52 @@ h4 {
 
 header {
   background-color: var(--accentOne);
+  font: 3.5rem var(--secondaryHeading);
 }
 
-main{
-  padding: 10rem;
+a{
+  color: var(--fontOnLight);
 }
+
+a:hover{
+  color: var(--backgroundOne);
+}
+
+[aria-current]{
+  color: var(--backgroundTwo)
+}
+
+
+[aria-controls="menuList"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  max-height: 0;
+  overflow: hidden;
+  transform: translateX(-100px);
+  transition: all .5s;
+}
+
+[aria-expanded="true"] ~ ul {
+  display: grid;
+  max-height: 500px;
+  transform: translateX(0);
+}
+
+[aria-expanded="false"] #closeNav {
+  display: none;
+}
+
+[aria-expanded="true"] #closeNav {
+  display: inline-block;
+}
+
+[aria-expanded="true"] #openNav {
+  display: none;
+}
+
 
 .card {
   background-color: var(--backgroundTwo);
@@ -81,4 +128,41 @@ iframe {
 
 footer {
   background-color: var(--accentOne);
+}
+
+@media(min-width: 1000px){
+  body{
+    display: grid;
+    grid-template-columns: 30rem  10fr;
+    grid-template-areas: 
+      "header main"
+      "foot foot";
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    text-align: center;
+  }
+
+  nav li{
+    margin: 2rem 0;
+  }
+
+  #headerContent{
+    position: sticky;
+  }
+
+  [aria-controls="menuList"]{
+  display: none;
+}
+
+  main{
+    grid-area: main;
+  }
+
+  footer{
+    grid-area: foot;
+  }
 }

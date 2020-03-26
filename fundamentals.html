@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -13,9 +12,13 @@
 
 <body>
     <header>
-        <div class="wrapper">
+        <div id="headerContent" class="wrapper">
             <h1>BJJ Beginner's Guide</h1>
             <nav>
+                <button aria-expanded="false" aria-controls="menuList">
+                    <span id="openNav">Open Nav</span>
+                    <span id="closeNav">Close Nav</span>
+                </button>
                 <ul>
                     <li><a href="/index.html">Discover</a></li>
                     <li><a href="/fundamentals.html" aria-current="page">Fundamentals</a></li>
@@ -103,50 +106,50 @@
                 </article>
             </section>
             <section id="submissions">
-                
-                    <h3>Submissions</h3>
-                    <article>
-                        <div class="card">
-                            <h4>Chokes</h4>
-                            <p>A choke or strangle, is an attack that applies pressure to the neck. Some chokes are
-                                designed to
-                                cut off the oxygen from the opponent. Other chokes restrict blood flow through the neck.
-                                Chokeholds, if held long enough, can render an opponent unconscious. </p>
-                        </div>
-                        <figure class="videoPlayer">
-                            <iframe src="https://www.youtube.com/embed/SrWZLEJLOmo"></iframe>
-                        </figure>
-                    </article>
-                    <article>
-                        <div class="card">
-                            <h4>Armlocks</h4>
-                            <p>An armlock is any attack designed to hyperextend an opponent’s arm. This is typically
-                                done to
-                                the
-                                joints in the elbows or shoulders. By creating a fulcrum point, leverage is used to
-                                apply
-                                the
-                                correct pressure to the exposed limb.</p>
-                        </div>
-                        <figure class="videoPlayer">
-                            <iframe src="https://www.youtube.com/embed/mMQjtRBE1uA"></iframe>
-                        </figure>
-                    </article>
-                    <article>
-                        <div class="card">
-                            <h4>Leglocks</h4>
-                            <p>Leg attacks are becoming more and more popular in modern Jiu Jitsu. Similar to armlocks,
-                                leg
-                                locks are attacks to the joins of the leg such as the ankles and knees. For beginner’s
-                                it’s
-                                safe
-                                to start with attacks to the ankles. More advanced leg lock’s can be learned as a
-                                grappler
-                                gains
-                                experience, however, these techniques have a higher risk of injury.</p>
-                        </div>
-                        <figure class="videoPlayer">
-                            <iframe src="https://www.youtube.com/embed/59hN1vNz7VM""></iframe>
+
+                <h3>Submissions</h3>
+                <article>
+                    <div class="card">
+                        <h4>Chokes</h4>
+                        <p>A choke or strangle, is an attack that applies pressure to the neck. Some chokes are
+                            designed to
+                            cut off the oxygen from the opponent. Other chokes restrict blood flow through the neck.
+                            Chokeholds, if held long enough, can render an opponent unconscious. </p>
+                    </div>
+                    <figure class="videoPlayer">
+                        <iframe src="https://www.youtube.com/embed/SrWZLEJLOmo"></iframe>
+                    </figure>
+                </article>
+                <article>
+                    <div class="card">
+                        <h4>Armlocks</h4>
+                        <p>An armlock is any attack designed to hyperextend an opponent’s arm. This is typically
+                            done to
+                            the
+                            joints in the elbows or shoulders. By creating a fulcrum point, leverage is used to
+                            apply
+                            the
+                            correct pressure to the exposed limb.</p>
+                    </div>
+                    <figure class="videoPlayer">
+                        <iframe src="https://www.youtube.com/embed/mMQjtRBE1uA"></iframe>
+                    </figure>
+                </article>
+                <article>
+                    <div class="card">
+                        <h4>Leglocks</h4>
+                        <p>Leg attacks are becoming more and more popular in modern Jiu Jitsu. Similar to armlocks,
+                            leg
+                            locks are attacks to the joins of the leg such as the ankles and knees. For beginner’s
+                            it’s
+                            safe
+                            to start with attacks to the ankles. More advanced leg lock’s can be learned as a
+                            grappler
+                            gains
+                            experience, however, these techniques have a higher risk of injury.</p>
+                    </div>
+                    <figure class="videoPlayer">
+                        <iframe src="https://www.youtube.com/embed/59hN1vNz7VM""></iframe>
                     </figure>
                 </article>
             </section>
@@ -154,22 +157,23 @@
         </main>
         <footer>
             <div class=" wrapper">
-                                <h2>Stay Up To Date</h2>
-                                <form>
-                                    <ul>
-                                        <li>
-                                            <label for="email">Email</label>
-                                            <input type="email" id="email">
-                                        </li>
-                                    </ul>
-                                </form>
-                                <ul id="socials">
-                                    <li><a href="https://www.twitter.com">Twitter</a></li>
-                                    <li><a href="https://www.instagram.com">Instagram</a></li>
-                                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                            <h2>Stay Up To Date</h2>
+                            <form>
+                                <ul>
+                                    <li>
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email">
+                                    </li>
                                 </ul>
-                </div>
-                </footer>
+                            </form>
+                            <ul id="socials">
+                                <li><a href="https://www.twitter.com">Twitter</a></li>
+                                <li><a href="https://www.instagram.com">Instagram</a></li>
+                                <li><a href="https://www.facebook.com">Facebook</a></li>
+                            </ul>
+        </div>
+        </footer>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

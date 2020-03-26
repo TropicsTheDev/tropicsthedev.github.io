@@ -9,8 +9,13 @@
   </head>
   <body>
     <header>
-      <h1>BJJ Beginner's Guide</h1>
+      <div id="#headerContent"  class="wrapper">
       <nav>
+  
+          <button aria-expanded="false" aria-controls="menuList">
+              <span id="openNav">Open Nav</span>
+              <span id="closeNav">Close Nav</span>
+          </button>
         <ul>
           <li><a href="/index.html">Discover</a></li>
           <li><a href="/fundamentals.html">Fundamentals</a></li>
@@ -19,10 +24,12 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main>
+      <div class="wrapper">
       <h2>Competition</h2>
-      <section id="whyCompete">
+      <section id="whyCompete" class="card">
         <h3>Why Compete?</h3>
         <p>
           While competing is not required, it is often a great way to test your
@@ -32,7 +39,7 @@
           something to be gained by going out on and doing you’re best.
         </p>
       </section>
-      <section id="whereCompete">
+      <section id="whereCompete" class="card">
         <h3>Where To Compete?</h3>
         <p>
           There are many ways find competitions in your local area. Each
@@ -50,8 +57,10 @@
           <li><a href="https://newbreedbjj.com/">Newbreed</a></li>
         </ul>
       </section>
+    </div>
     </main>
     <footer>
+      <div class="wrapper">
       <form>
         <ul>
           <li>
@@ -65,6 +74,8 @@
         <li><a href="https://www.instagram.com">Instagram</a></li>
         <li><a href="https://www.facebook.com">Facebook</a></li>
       </ul>
+    </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
