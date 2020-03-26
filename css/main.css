@@ -41,6 +41,11 @@ body {
   display: grid;
   grid-gap: 3.5rem;
 }
+
+h1{
+  grid-area: heading;
+  justify-self: right;
+}
 h2 {
   font: 4.5rem var(--primaryHeading);
   color: var(--accentOne);
@@ -63,6 +68,11 @@ header {
   font: 3.5rem var(--secondaryHeading);
 }
 
+#headerContent{
+  display: grid;
+  grid-template-areas: "nav heading";
+}
+
 a{
   color: var(--fontOnLight);
 }
@@ -80,12 +90,16 @@ a:hover{
   display: block;
   margin-bottom: 10px;
 }
+nav{
+  justify-self: left;
+  grid-area: nav;
+}
 
 nav ul {
   max-height: 0;
   overflow: hidden;
   transform: translateX(-100px);
-  transition: all .5s;
+  transition: all 1s;
 }
 
 [aria-expanded="true"] ~ ul {
@@ -145,13 +159,26 @@ footer {
     grid-area: header;
     text-align: center;
   }
+  h1{
+    justify-self: center;
+  }
 
+  nav{
+    justify-self: center;
+  }
+
+  nav ul{
+    transform: translateX(0px);
+    max-height: 50rem;
+  }
   nav li{
     margin: 2rem 0;
   }
 
   #headerContent{
-    position: sticky;
+    grid-template-areas: 
+      "heading"
+      "nav";
   }
 
   [aria-controls="menuList"]{
