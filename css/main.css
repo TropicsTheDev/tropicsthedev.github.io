@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Anton|Oxygen|Shojumaru&display=swap');
 
 html {
@@ -66,6 +67,7 @@ h4 {
 header {
   background-color: var(--accentOne);
   font: 3.5rem var(--secondaryHeading);
+
 }
 
 #headerContent{
@@ -168,7 +170,7 @@ footer {
   }
 
   nav ul{
-    transform: translateX(0px);
+    transform: translateX(0);
     max-height: 50rem;
   }
   nav li{
@@ -179,6 +181,11 @@ footer {
     grid-template-areas: 
       "heading"
       "nav";
+
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+      align-items: center;
   }
 
   [aria-controls="menuList"]{

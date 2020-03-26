@@ -1,4 +1,9 @@
-section{
+section ul{
     display: grid;
-    
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: var(--defaultGap);
+}
+
+li{
+    position: relative;
 }
