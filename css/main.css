@@ -71,6 +71,7 @@ header {
 }
 
 #headerContent{
+  width: 100%;
   display: grid;
   grid-template-areas: "nav heading";
 }

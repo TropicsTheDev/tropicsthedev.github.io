@@ -1,9 +1,22 @@
 section ul{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+     grid-template-columns: 1fr;
     grid-gap: var(--defaultGap);
 }
 
 li{
-    position: relative;
+    display: grid;
+    grid-template-areas: 
+        "video"
+        "heading";
+}
+
+li h3{
+    grid-area: heading;
+}
+
+@media (min-width: 1000px){
+    section ul{
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
 }
