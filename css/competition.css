@@ -1,9 +1,20 @@
 #compVenders{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-items: center;
 }
 
 #compVenders a{
+    display: block;
+    font-size: 0;
+    
+}
+
+@media(min-width: 1000px){
+    #compVenders{
+        
+        grid-template-columns: 1fr 1fr 1fr
+        
+    }
     
 }
