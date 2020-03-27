@@ -1,19 +1,26 @@
 #compVenders {
   display: grid;
+  grid-gap: var(--defaultGap);
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
 }
 
+#compVenders li{
+    
+    width: 100%;
+    max-height: 130px;
+}
 #compVenders a {
-padding: 5rem;
-  display: block;
-  height: 100%;
+    
+    padding: 6rem;
+  display: inline-block;
+  
   width: 100%;
   font-size: 0;
-  
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 #naga a{

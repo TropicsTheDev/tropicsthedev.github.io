@@ -5,8 +5,7 @@ section{
     grid-template-areas: 
         "heading"
         "article"
-        "article"
-        "article";
+        ;
 }
 
 article{
@@ -15,6 +14,7 @@ article{
         "video"
         "card";
         grid-gap: var(--defaultGap);
+        margin-bottom: 4rem;
 }
 
 .card{
