@@ -47,6 +47,7 @@ h1{
   grid-area: heading;
   justify-self: right;
 }
+
 h2 {
   font: 4.5rem var(--primaryHeading);
   color: var(--accentOne);
@@ -93,6 +94,7 @@ a:hover{
   display: block;
   margin-bottom: 10px;
 }
+
 nav{
   justify-self: left;
   grid-area: nav;
