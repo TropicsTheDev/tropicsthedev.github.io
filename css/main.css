@@ -47,14 +47,15 @@ h1{
   grid-area: heading;
   justify-self: right;
   font-size: 0;
-  padding: 15rem;
+  padding: 5rem;
   background-image: url("../images/logo.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
 h2 {
-  font: 4.5rem var(--primaryHeading);
+  font: 3rem var(--primaryHeading);
   color: var(--accentOne);
   margin-top: 1rem;
 }
@@ -72,9 +73,11 @@ h4 {
 
 header {
   background-color: var(--accentOne);
-  font: 3.5rem var(--secondaryHeading);
+  font: 2.5rem var(--secondaryHeading);
 
 }
+
+
 
 #headerContent{
   width: 100%;
@@ -97,11 +100,15 @@ a:hover{
 
 [aria-controls="menuList"] {
   display: block;
-  margin-bottom: 10px;
+  width: 100%;
+  background-color: red;
+  align-self: center;
+  margin-bottom: 2rem;
 }
 
 nav{
   justify-self: left;
+  align-self: center;
   grid-area: nav;
 }
 
@@ -157,7 +164,7 @@ footer {
 @media(min-width: 1000px){
   body{
     display: grid;
-    grid-template-columns: 30rem  10fr;
+    grid-template-columns: 20rem  10fr;
     grid-template-areas: 
       "header main"
       "foot foot";
@@ -172,6 +179,7 @@ footer {
   }
   h1{
     justify-self: center;
+    padding: 10rem;
   }
 
   nav{
@@ -188,7 +196,7 @@ footer {
 
   #headerContent{
     position: fixed;
-    left: 5rem;
+    left: calc(5rem- (5rem / 3));
     max-width: 20rem;
     grid-template-areas: 
       "heading"
