@@ -29,6 +29,7 @@ html {
 
 body {
   background-color: var(--backgroundOne);
+  min-height: 100vh;
   font: 2.5rem var(--contentText);
   color: var(--fontOnLight);
   font-weight: lighter;
