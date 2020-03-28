@@ -46,6 +46,11 @@ body {
 h1{
   grid-area: heading;
   justify-self: right;
+  font-size: 0;
+  padding: 15rem;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-position: center;
 }
 
 h2 {
