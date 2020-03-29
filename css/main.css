@@ -175,7 +175,7 @@ footer {
 
 footer .wrapper {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 3rem;
   grid-template-areas:
     "h2"
     "input"
@@ -211,12 +211,13 @@ footer button {
 }
 
 #socials {
+  align-self: right;
   grid-area: socials;
   display: grid;
   grid-gap: 5rem;
   grid-template-columns: 6rem 6rem 6rem;
-  justify-items: center;
-  justify-content: center;
+  align-items: center;
+  justify-content: right;
 }
 
 #socials li {
