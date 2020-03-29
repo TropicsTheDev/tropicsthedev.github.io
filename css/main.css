@@ -30,6 +30,8 @@ body {
   background-color: var(--backgroundOne);
   font: 1.8rem var(--contentText);
   line-height: 1.75;
+  min-height: 100vh;
+  font: 2.5rem var(--contentText);
   color: var(--fontOnLight);
   font-weight: lighter;
 }
