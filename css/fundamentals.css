@@ -26,9 +26,7 @@ article{
     grid-area: video;
 }
 
-@media (min-width: 600px) and (max-width: 899px){
-    
-}
+
 
 @media (min-width: 900px){
     article{

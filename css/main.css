@@ -36,9 +36,12 @@ body {
   font-weight: lighter;
 }
 
+header, footer{
+  width: 100vw;
+}
 .wrapper {
   max-width: var(--maxWidth);
-  padding: 3rem;
+  padding: 2rem;
   margin: 0 auto;
   display: grid;
   grid-gap: 3.5rem;
@@ -261,6 +264,10 @@ footer button {
     flex-direction: column;
     grid-area: header;
     text-align: center;
+  }
+
+  header, footer{
+    width: 100%;
   }
   h1 {
     justify-self: center;
