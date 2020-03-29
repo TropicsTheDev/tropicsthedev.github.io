@@ -7,13 +7,12 @@
 }
 
 #compVenders li{
-    
     width: 100%;
     max-height: 130px;
 }
 #compVenders a {
     
-    padding: 6rem;
+padding: 6rem;
   display: inline-block;
   
   width: 100%;

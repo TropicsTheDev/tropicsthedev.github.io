@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css?family=Anton|Oxygen|Shojumaru&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Anton|Oxygen|Shojumaru&display=swap");
 
 html {
   /* base 10 font */
@@ -29,21 +28,21 @@ html {
 
 body {
   background-color: var(--backgroundOne);
-  font: 2.5rem var(--contentText);
+  font: 1.8rem var(--contentText);
+  line-height: 1.75;
   color: var(--fontOnLight);
   font-weight: lighter;
-
 }
 
 .wrapper {
   max-width: var(--maxWidth);
-  padding: 2.5rem;
+  padding: 3rem;
   margin: 0 auto;
   display: grid;
   grid-gap: 3.5rem;
 }
 
-h1{
+h1 {
   grid-area: heading;
   justify-self: right;
   font-size: 0;
@@ -55,18 +54,18 @@ h1{
 }
 
 h2 {
-  font: 3rem var(--primaryHeading);
+  font: 3.5rem var(--primaryHeading);
   color: var(--accentOne);
   margin-top: 1rem;
 }
 
 h3 {
-  font: 4rem var(--secondaryHeading);
+  font: 3rem var(--secondaryHeading);
   color: var(--accentTwo);
 }
 
 h4 {
-  font: 3.5rem var(--secondaryHeading);
+  font: 2.5rem var(--secondaryHeading);
 
   color: var(--accentOne);
 }
@@ -74,39 +73,35 @@ h4 {
 header {
   background-color: var(--accentOne);
   font: 2.5rem var(--secondaryHeading);
-
 }
 
-
-
-#headerContent{
+#headerContent {
   width: 100%;
   display: grid;
   grid-template-areas: "nav heading";
 }
 
-a{
+a {
   color: var(--fontOnLight);
 }
 
-a:hover{
+a:hover {
   color: var(--backgroundOne);
 }
 
-[aria-current]{
-  color: var(--backgroundTwo)
+[aria-current] {
+  color: var(--backgroundTwo);
 }
-
 
 [aria-controls="menuList"] {
   display: block;
-  width: 100%;
-  background-color: red;
+  background-color: transparent;
   align-self: center;
   margin-bottom: 2rem;
+  
 }
 
-nav{
+nav {
   justify-self: left;
   align-self: center;
   grid-area: nav;
@@ -116,8 +111,10 @@ nav ul {
   max-height: 0;
   overflow: hidden;
   transform: translateX(-100px);
-  transition: all 1s;
+  transition: all .75s;
 }
+
+
 
 [aria-expanded="true"] ~ ul {
   display: grid;
@@ -131,18 +128,31 @@ nav ul {
 
 [aria-expanded="true"] #closeNav {
   display: inline-block;
+  font-size: 0;
+    padding: 3rem;
+    background-image: url("../images/icons/close-line.png");
+    background-position: center;
+    background-size: cover;
+    
 }
 
+[aria-expanded="false"] #openNav {
+    display: inline-block;
+    font-size: 0;
+    padding: 3rem;
+    background-image: url("../images/icons/menu-2-line.png");
+    background-position: center;
+    background-size: cover;
+    
+  }
 [aria-expanded="true"] #openNav {
   display: none;
 }
-
 
 .card {
   background-color: var(--backgroundTwo);
   padding: 3rem;
   box-shadow: 10px 10px 10px var(--cardShadow);
-  
 }
 
 .videoPlayer {
@@ -161,62 +171,149 @@ footer {
   background-color: var(--accentOne);
 }
 
-@media(min-width: 1000px){
-  body{
+footer .wrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "h2"
+    "input"
+    "socials";
+}
+
+footer h2 {
+  grid-area: h2;
+  color: var(--accentTwo);
+}
+
+footer form {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 2fr 1fr;
+  align-content: center;
+}
+input {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: var(--backgroundTwo);
+  width: 100%;
+}
+label {
+  display: none;
+}
+footer button {
+  display: inline-block;
+  padding: 0.75rem;
+  color: var(--backgroundTwo);
+  font: 2rem var(--primaryHeading);
+  background-color: var(--accentTwo);
+}
+
+#socials {
+  grid-area: socials;
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: 6rem 6rem 6rem;
+  justify-items: center;
+  justify-content: center;
+}
+
+#socials li {
+  display: inline-block;
+  width: 100%;
+  max-height: 130px;
+}
+
+#socials a {
+  display: block;
+  font-size: 0;
+  padding: 3rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#twitter a {
+  background-image: url("../images/icons/twitter-fill.png");
+}
+
+#instagram a {
+  background-image: url("../images/icons/instagram-fill.png");
+}
+
+#facebook a {
+  background-image: url("../images/icons/facebook-fill.png");
+}
+@media (min-width: 1000px) {
+  body {
     display: grid;
-    grid-template-columns: 20rem  10fr;
-    grid-template-areas: 
+    grid-template-columns: 20rem 10fr;
+    grid-template-areas:
       "header main"
       "foot foot";
   }
 
-  header{
+  header {
     position: relative;
     display: flex;
     flex-direction: column;
     grid-area: header;
     text-align: center;
   }
-  h1{
+  h1 {
     justify-self: center;
     padding: 10rem;
   }
 
-  nav{
+  nav {
     justify-self: center;
   }
 
-  nav ul{
+  nav ul {
     transform: translateX(0);
     max-height: 50rem;
   }
-  nav li{
+  nav li {
     margin: 2rem 0;
   }
 
-  #headerContent{
+  #headerContent {
     position: fixed;
     left: calc(5rem- (5rem / 3));
     max-width: 20rem;
-    grid-template-areas: 
+    grid-template-areas:
       "heading"
       "nav";
 
-      justify-content: center;
-      justify-items: center;
-      align-content: center;
-      align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
   }
 
-  [aria-controls="menuList"]{
-  display: none;
-}
+  [aria-controls="menuList"] {
+    display: none;
+  }
 
-  main{
+  main {
     grid-area: main;
   }
 
-  footer{
+  footer {
     grid-area: foot;
+  }
+  footer .wrapper {
+    display: grid;
+    grid-template-areas:
+      "h2 h2 h2"
+      "input .... socials";
+  }
+
+  footer form {
+    grid-area: input;
+  }
+
+  #socials {
+    grid-area: socials;
   }
 }

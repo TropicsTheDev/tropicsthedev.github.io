@@ -1,7 +1,7 @@
 section ul{
     display: grid;
     /* Handles responsive grid */
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
     grid-gap: var(--defaultGap);
 }
 
@@ -14,5 +14,6 @@ li{
 
 h3{
     grid-area: heading;
-    font-size: 2rem;
+    font-size: 3rem;
+    text-overflow: ellipsis;
 }
