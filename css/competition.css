@@ -3,7 +3,7 @@
   grid-gap: var(--defaultGap);
   grid-template-columns: 1fr;
   justify-items: center;
-  align-items: center;
+  justify-content: center;
 }
 
 #compVenders li{
