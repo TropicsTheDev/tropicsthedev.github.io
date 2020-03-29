@@ -183,7 +183,7 @@ footer .wrapper {
 }
 
 footer h2 {
-  grid-area: h2;
+  font-size: 3.25rem;
   color: var(--accentTwo);
 }
 
@@ -228,7 +228,7 @@ footer button {
 #socials a {
   display: block;
   font-size: 0;
-  padding: 3rem;
+  padding: 2.5rem;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -246,7 +246,7 @@ footer button {
 #facebook a {
   background-image: url("../images/icons/facebook-fill.png");
 }
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   body {
     display: grid;
     grid-template-columns: 20rem 10fr;

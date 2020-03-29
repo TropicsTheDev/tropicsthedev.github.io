@@ -33,7 +33,7 @@
     background-image: url("../images/newbreed.png");
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   #compVenders {
     grid-template-columns: 1fr 1fr 1fr;
   }
