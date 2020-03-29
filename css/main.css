@@ -162,6 +162,8 @@ nav ul {
 
 .videoPlayer {
   position: relative;
+  width: 100%;
+  padding-top: 35px;
   padding-bottom: 56.25%;
 }
 iframe {
@@ -249,7 +251,7 @@ footer button {
 #facebook a {
   background-image: url("../images/icons/facebook-fill.png");
 }
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   body {
     display: grid;
     grid-template-columns: 20rem 10fr;

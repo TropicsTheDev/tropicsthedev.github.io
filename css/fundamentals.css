@@ -26,9 +26,14 @@ article{
     grid-area: video;
 }
 
+@media(min-width: 800px) and (max-width: 1199px){
+    article{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "card video";
+    }
+}
 
-
-@media (min-width: 900px){
+@media (min-width: 1200px){
     article{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "card video";
